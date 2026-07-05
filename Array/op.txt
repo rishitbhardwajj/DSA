@@ -1,0 +1,1 @@
+Number of subarrays with sum 3 = 3

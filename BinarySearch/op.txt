@@ -1,0 +1,1 @@
+Enter elements: Minimum element is: 2
