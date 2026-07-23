@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+struct Node {
+    int data;
+    Node *left;
+    Node *right;
+};
+
+Node* createNode(int val) {
+    Node* temp = (Node*)malloc(sizeof(Node));
+    temp->data = val;
+    temp->left = NULL;
+    temp->right = NULL;
+    return temp;
+}
+
+Node* buildTree() {
+    int x;
+    cin >> x;
+
+    if (x == -1)
+        return NULL;
+
+    Node* root = createNode(x);
+
+    root->left = buildTree();
+    root->right = buildTree();
+
+    return root;
+}
+
+void preorder(Node* root) {
+    if (root == NULL)
+        return;
+
+    cout << root->data << " ";
+    preorder(root->left);
+    preorder(root->right);
+}
+
+int main() {
+    Node* root = buildTree();
+
+    cout << "Preorder Traversal: ";
+    preorder(root);
+
+    return 0;
+}
