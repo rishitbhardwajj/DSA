@@ -3,7 +3,7 @@ using namespace std;
 
 class Solution {
 public:
-    vector<int> bfsOfGraph(int V, vector<int> adj[]) {
+    vector<int> bfsOfGraph(int V, vector<int> adj[]){
         vector<int> vis(V, 0);
         vis[0] = 1;
 
