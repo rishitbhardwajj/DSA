@@ -60,7 +60,6 @@ int main() {
     root->left->right = new TreeNode(5);
 
     Solution obj;
-
     if (obj.isBalanced(root))
         cout << "Balanced Binary Tree";
     else
