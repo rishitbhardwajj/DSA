@@ -44,7 +44,6 @@ public:
         int n = details.size();
 
         DisjointSet ds(n);
-
         unordered_map<string, int> mapMailNode;
 
         for (int i = 0; i < n; i++) {

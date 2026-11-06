@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 bool check(int start, vector<vector<int>>& adj, vector<int>& color) {
     queue<int> q;
     q.push(start);
